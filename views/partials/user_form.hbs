@@ -1,0 +1,82 @@
+<div class="col-6">
+
+    <div class="form-floating mb-3">
+        <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="First Name"
+            name="first_name"
+            value="{{user.dataValues.first_name}}"
+            pattern="[a-zA-Z]{3,}"
+            required
+        />
+        <label for="floatingInput">First Name</label>
+    </div>
+</div>
+<div class="col-6">
+
+    <div class="form-floating mb-3">
+        <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Last Name"
+            value="{{user.dataValues.last_name}}"
+            pattern="[a-zA-Z]{3,}"
+            name="last_name"
+            required
+        />
+        <label for="floatingInput">Last Name</label>
+    </div>
+</div>
+<div class="col-6">
+
+    <div class="form-floating mb-3">
+        <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            value="{{user.dataValues.email}}"
+            placeholder="Email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+        />
+        <label for="floatingInput">Email</label>
+    </div>
+</div>
+<div class="col-6">
+
+    <div class="form-floating mb-3">
+        <input
+            type="tel"
+            pattern="[0-9]{11}|[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+            class="form-control"
+            id="floatingInput"
+            placeholder="Phone Number"
+            value="{{user.dataValues.phone}}"
+            name="phone"
+        />
+        <label for="floatingInput">Phone Number</label>
+    </div>
+</div>
+
+<div class="col-12">
+
+    <div class="form-floating mb-3">
+        <textarea
+            class="form-control"
+            id="floatingInput"
+            placeholder="Leave a comment here"
+            name="comments"
+            style="height: 200px;"
+        >{{user.dataValues.comments}}</textarea>
+
+    </div>
+</div>
+
+<div class="col-12 d-grid">
+    <button class="btn btn-primary" type="submit">Submit</button>
+</div>
