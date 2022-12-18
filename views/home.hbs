@@ -36,13 +36,13 @@
 
         {{#each users}}
             <tr>
-                <td>{{this.dataValues.first_name}}</td>
-                <td>{{this.dataValues.last_name}}</td>
-                <td>{{this.dataValues.email}}</td>
-                <td>{{this.dataValues.phone}}</td>
+                <td>{{dataValues.first_name}}</td>
+                <td>{{dataValues.last_name}}</td>
+                <td>{{dataValues.email}}</td>
+                <td>{{dataValues.phone}}</td>
                 <td class="text-end">
                     <a
-                        href="/user/{{this.dataValues.uuid}}"
+                        href="/user/{{dataValues.uuid}}"
                         type="button"
                         class="btn btn-light btn-small"
                     >
@@ -50,7 +50,7 @@
                         view
                     </a>
                     <a
-                        href="/edit/{{this.dataValues.uuid}}"
+                        href="/edit/{{dataValues.uuid}}"
                         type="button"
                         class="btn btn-light btn-small"
                     >
@@ -58,7 +58,7 @@
                         Edit
                     </a>
                     <a
-                        href="/delete/{{this.dataValues.uuid}}"
+                        href="/delete/{{dataValues.uuid}}"
                         type="button"
                         class="btn btn-light btn-small"
                     >

@@ -1,13 +1,12 @@
-var createError = require("http-errors");
-var express = require("express");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
-require("dotenv").config();
-var router = require("./routes/index");
+const createError = require("http-errors");
+const express = require("express");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
+const router = require("./routes/index");
 
 const { engine } = require("express-handlebars");
 
-var app = express();
+const app = express();
 
 // view engine setup
 
@@ -20,6 +19,7 @@ app.engine(
 );
 app.set("view engine", "hbs");
 app.set("views", "./views");
+app.disable("x-powered-by");
 
 app.use(logger("dev"));
 app.use(express.json());
