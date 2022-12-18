@@ -14,7 +14,6 @@ app.engine(
     "hbs",
     engine({
         extname: ".hbs",
-        layoutsDir: "views/layout/",
     })
 );
 app.set("view engine", "hbs");
